@@ -1,6 +1,6 @@
 {
   "name": "react-intl-tel-input",
-  "version": "4.3.8",
+  "version": "4.5.1",
   "description": "Telephone input component. Rewrite intl-tel-input in React.js.",
   "author": "patw",
   "keywords": [
