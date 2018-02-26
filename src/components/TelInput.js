@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Input from 'react-input-mask';
 
 class TelInput extends Component {
   render() {
     return (
-      <input
+      <Input
         { ...this.props.inputProps }
-        ref={ this.props.refCallback }
+        inputRef={ this.props.refCallback }
         type="tel"
         autoComplete={ this.props.autoComplete }
         className={ this.props.className }
@@ -19,6 +20,9 @@ class TelInput extends Component {
         onChange={ this.props.handleInputChange }
         onBlur={ this.props.handleOnBlur }
         autoFocus={ this.props.autoFocus }
+        alwaysShowMask
+        mask={ this.props.mask }
+        maskChar="_"
       />
     );
   }
@@ -38,6 +42,7 @@ TelInput.propTypes = {
   autoComplete: PropTypes.string,
   inputProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
   refCallback: PropTypes.func.isRequired,
+  mask: PropTypes.string,
 };
 
 export default TelInput;

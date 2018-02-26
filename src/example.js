@@ -81,7 +81,7 @@ class DemoComponent extends Component {
           hideDialCode
           separateDialCode
           css={ ['intl-tel-input', 'form-control'] }
-          utilsScript="libphonenumber.js"
+          utilsScript="//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.9/js/utils.js"
           format
         />
         <div>Phone Number: {this.state.phone1 }</div>
@@ -93,7 +93,7 @@ class DemoComponent extends Component {
           defaultCountry={ 'jp' }
           value={ this.state.phone2 }
           css={ ['intl-tel-input', 'form-control'] }
-          utilsScript="libphonenumber.js"
+          utilsScript="//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.9/js/utils.js"
         />
         <div>Phone Number: {this.state.phone2}</div>
       </div>

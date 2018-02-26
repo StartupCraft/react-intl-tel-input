@@ -61,6 +61,7 @@ class IntlTelInputApp extends Component {
       title: '',
       countryCode: 'us',
       dialCode: '',
+      mask: '',
     };
 
     this.selectedCountryData = {};
@@ -804,6 +805,7 @@ class IntlTelInputApp extends Component {
 
       this.setState({
         placeholder,
+        mask: placeholder && placeholder.replace(/[0-9]/g, '9'),
       });
     }
   }
@@ -1173,6 +1175,7 @@ class IntlTelInputApp extends Component {
           autoFocus={ this.props.autoFocus }
           autoComplete={ this.props.autoComplete }
           inputProps={ this.props.telInputProps }
+          mask={ this.state.mask }
         />
       </div>
     );
