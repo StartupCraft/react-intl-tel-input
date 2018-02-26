@@ -137,6 +137,10 @@ class IntlTelInputApp extends Component {
       });
     }
 
+    // generate the markup
+    this.generateMarkup();
+    // set the initial state of the input value and the selected flag
+    this.setInitialState();
     // utils script, and auto country
     this.initRequests();
 
@@ -144,7 +148,6 @@ class IntlTelInputApp extends Component {
     this.deferreds.push(this.utilsScriptDeferred.promise());
 
     _.when(this.deferreds).done(() => {
-      this.generateMarkup();
       this.setInitialState();
     });
 
@@ -899,9 +902,6 @@ class IntlTelInputApp extends Component {
   generateMarkup() {
     this.wrapperClass['allow-dropdown'] = this.allowDropdown;
     this.wrapperClass['separate-dial-code'] = this.props.separateDialCode;
-    this.setState({
-      disabled: false,
-    });
 
     if (this.isMobile && this.props.useMobileFullscreenDropdown) {
       utils.addClass(document.querySelector('body'), 'iti-mobile');
@@ -1260,7 +1260,7 @@ IntlTelInputApp.defaultProps = {
   onPhoneNumberChange: null,
   onPhoneNumberBlur: null,
   onSelectFlag: null,
-  disabled: true,
+  disabled: false,
   hideDialCode: false,
   autoFocus: false,
   // whether to use fullscreen flag dropdown for mobile useragents

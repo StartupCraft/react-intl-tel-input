@@ -74,7 +74,6 @@ $mobilePopupMargin: 30px;
   .flag-container {
     // positioned over the top of the input
     position: absolute;
-    display: none;
     // full height
     top: 0;
     bottom: 0;
@@ -203,7 +202,6 @@ $mobilePopupMargin: 30px;
       right: auto;
       left: 0;
       width: 100%;
-      display: block;
     }
     .selected-flag {
       width: $selectedFlagArrowWidth;
