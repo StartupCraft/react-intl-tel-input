@@ -5869,6 +5869,15 @@ react-input-mask@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/react-input-mask/-/react-input-mask-1.2.2.tgz#225a1130d316ee54cea7431f004c738b4c41b4da"
 
+react-intl-phone-input@^4.5.4:
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/react-intl-phone-input/-/react-intl-phone-input-4.5.4.tgz#adc6bdf3ef8c6bc7eb58a5c53c359e9b9bc7e68b"
+  dependencies:
+    classnames "^2.2.5"
+    react-input-mask "^1.2.2"
+    react-style-proptype "^3.0.0"
+    underscore.deferred "^0.4.0"
+
 react-style-proptype@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-style-proptype/-/react-style-proptype-3.0.0.tgz#89e0b646f266c656abb0f0dd8202dbd5036c31e6"
