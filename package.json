@@ -1,6 +1,6 @@
 {
-  "name": "react-intl-tel-input",
-  "version": "4.5.3",
+  "name": "react-intl-phone-input",
+  "version": "4.5.5",
   "description": "Telephone input component. Rewrite intl-tel-input in React.js.",
   "author": "patw",
   "keywords": [
@@ -28,6 +28,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "react-input-mask": "^1.2.2",
+    "react-intl-phone-input": "^4.5.4",
     "react-style-proptype": "^3.0.0",
     "underscore.deferred": "^0.4.0"
   },
